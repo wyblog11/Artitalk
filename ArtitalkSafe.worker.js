@@ -1,5 +1,4 @@
 //此脚本由MHuiG - MiniValine写成，ChenYFan将其做少量修改制成，此脚本仅适用于Artitalk
-
 async function handleRequest(event) {
   AppId = (function () { try { return APPID } catch (e) { return "" } })()
   AppKey = (function () { try { return APPKEY } catch (e) { return "" } })()
