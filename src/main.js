@@ -1,6 +1,6 @@
 'use strict'
 
-const atVersion = "3.3.4";
+const atVersion = "3.3.9";
 
 if (typeof (appID) !== 'undefined') {
     let update = confirm("　　3.x版本更新需要修改一下配置，深感抱歉，但是为了更好的体验不得不这样。\n　　如果不想更换，可以继续使用2.4.2版本，这也是比较成熟的版本了，但是以后不会再维护。更换详情请点击确定前往文档查看");
@@ -930,7 +930,7 @@ atEvery.prototype.beginUpload = function (file) {
             fadeOut('lazy');
         }
     });
-    xhr.open("POST", "https://7bu.top/api/upload");
+    xhr.open("POST", "https://pnglog.com/api/v1/upload");
     let imgToken = AV.User.current().attributes.imgToken;
     if (imgToken !== undefined) {
         xhr.setRequestHeader("Authorization", "Basic VGVzdDoxMjM0NTY=");
